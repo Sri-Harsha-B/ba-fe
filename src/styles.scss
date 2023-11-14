@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif !important;
+}
+
+body {
+  margin: 0;
+  background-color: #d1e3ff;
+}
+
+p,
+li {
+  font-family: "Open Sans", sans-serif !important;
+  line-height: 1.6;
+}
+
+ul {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.pointer {
+  cursor: pointer;
+}

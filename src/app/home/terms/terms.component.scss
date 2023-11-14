@@ -1,0 +1,17 @@
+.responsive
+{
+   height:auto;
+   width:100%;
+}  
+.content-container
+{
+   margin: 7% 15% 5% 15%;   
+}
+
+@media screen  and (max-width:500px)
+{
+   .content-container {
+   margin:10px;
+   }
+}
+

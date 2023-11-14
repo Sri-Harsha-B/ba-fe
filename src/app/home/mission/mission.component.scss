@@ -1,0 +1,63 @@
+.main-heading {
+  padding-top: 6%;
+  font-size: 32px;
+}
+.heading {
+  color: white;
+  font-size: 32px;
+}
+.header {
+  margin-top: 4%;
+}
+
+.bg {
+  padding-bottom: 5%;
+}
+
+.row {
+  padding: 40px;
+}
+.para {
+  color: white;
+}
+.card {
+  height: auto;
+  background-color: #014064;
+  border-radius: 20px;
+}
+
+.icon1 {
+  font-size: 50px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .my {
+    font-size: 24px;
+  }
+  .card {
+    margin: auto;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .main-heading {
+    padding-top: 15%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .my {
+    font-size: 28px;
+  }
+  .card {
+    margin: auto;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .main-heading {
+    padding-top: 15%;
+    font-size: 24px;
+  }
+}

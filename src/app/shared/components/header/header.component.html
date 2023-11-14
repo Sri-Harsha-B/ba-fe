@@ -1,0 +1,39 @@
+<mat-toolbar class="container-fluid">
+  <img
+    src="assets/images/BetterAnalytics_250X250_T.png"
+    alt="better_analytics_logo"
+    class="logo pointer"
+    [routerLink]="['/']"
+  />
+
+
+  <ng-container *ngIf="!isMobile">
+    <span class="ms-auto">
+      <span class="nav-style me-4" [routerLink]="['/mission']">Our mission</span>
+      <span class="nav-style me-4" [routerLink]="['/about-us']">Our team</span>
+      <span class="nav-style me-4" [routerLink]="['/scremer']">Scremer</span>
+      <span class="nav-style me-4" [routerLink]="['/our-story']">About us</span>
+    </span>
+    <button class="px-3 ms-auto btn" [routerLink]="['/contact-us']">Contact Us</button>
+  </ng-container>
+
+  
+  
+  <div class="hbtn">
+  <button class="hamburger-button" (click)="toggleMenu()">
+    <div class="bar" [class.open]="showMobileMenu"></div>
+    <div class="bar" [class.open]="showMobileMenu"></div>
+    <div class="bar" [class.open]="showMobileMenu"></div>
+  </button>
+ </div>
+  <ng-container *ngIf="isMobile">
+  <div class="menu-links" *ngIf="isMobile && showMobileMenu">
+    <span class="nav-style" [routerLink]="['/mission']">Our mission</span>
+    <span class="nav-style" [routerLink]="['/about-us']">Our team</span>
+    <span class="nav-style" [routerLink]="['/scremer']">Scremer</span>
+    <span class="nav-style" [routerLink]="['/our-story']">About us</span>
+    <span class="nav-style" [routerLink]="['/contact-us']">Contact Us</span>
+  </div>
+</ng-container>
+  
+</mat-toolbar>
