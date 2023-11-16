@@ -28,11 +28,11 @@
  </div>
   <ng-container *ngIf="isMobile">
   <div class="menu-links" *ngIf="isMobile && showMobileMenu">
-    <span class="nav-style" [routerLink]="['/mission']">Our mission</span>
-    <span class="nav-style" [routerLink]="['/about-us']">Our team</span>
-    <span class="nav-style" [routerLink]="['/scremer']">Scremer</span>
-    <span class="nav-style" [routerLink]="['/our-story']">About us</span>
-    <span class="nav-style" [routerLink]="['/contact-us']">Contact Us</span>
+    <span class="nav-style" [routerLink]="['/mission']" (click)="closeMenu()">Our mission</span>
+    <span class="nav-style" [routerLink]="['/about-us']"(click)="closeMenu()">Our team</span>
+    <span class="nav-style" [routerLink]="['/scremer']"(click)="closeMenu()">Scremer</span>
+    <span class="nav-style" [routerLink]="['/our-story']"(click)="closeMenu()">About us</span>
+    <span class="nav-style" [routerLink]="['/contact-us']"(click)="closeMenu()">Contact Us</span>
   </div>
 </ng-container>
   

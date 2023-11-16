@@ -20,7 +20,9 @@ export class HeaderComponent  {
   private checkScreenWidth() {
     this.isMobile = window.innerWidth <= 576;
   }
-
+  closeMenu() {
+    this.showMobileMenu = false;
+  }
   onResize(event: any) {
     this.isMobile = event.target.innerWidth <= 576;
     this.showMobileMenu = false;
